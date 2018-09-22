@@ -1,0 +1,1 @@
+ALTER TABLE tb_file ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES tb_user(id);

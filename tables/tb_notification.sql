@@ -1,9 +1,8 @@
-CREATE TABLE `tb_notification` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `created` datetime NOT NULL,
-  `file_id` bigint(20) NOT NULL,
-  `file_name` varchar(255) NOT NULL,
-  `type` int(11) NOT NULL,
-  `user_id` bigint(20) NOT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE tb_notification (
+  id BIGSERIAL PRIMARY KEY,
+  created TIMESTAMP NOT NULL,
+  file_id BIGSERIAL NOT NULL,
+  file_name VARCHAR NOT NULL,
+  type INTEGER NOT NULL,
+  user_id BIGSERIAL NOT NULL
 );
