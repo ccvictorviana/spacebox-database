@@ -4,5 +4,6 @@ CREATE TABLE tb_notification (
   file_id BIGSERIAL NOT NULL,
   file_name VARCHAR NOT NULL,
   type INTEGER NOT NULL,
-  user_id BIGSERIAL NOT NULL
+  user_owner_id BIGSERIAL NOT NULL,
+  user_action_id BIGSERIAL NOT NULL
 );

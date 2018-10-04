@@ -1,0 +1,5 @@
+CREATE TABLE tb_file_share (
+  id BIGSERIAL PRIMARY KEY,
+  file_id BIGSERIAL NOT NULL,
+  user_id BIGSERIAL NOT NULL
+);
